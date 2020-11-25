@@ -1,0 +1,443 @@
+/*anchors-------------------------------------------------------------------- */
+a {
+    word-wrap: break-word;
+}
+a:link, a:visited, a:active	{
+	color: #3399FF;
+}
+a:hover {
+    color: #9A3334;
+    text-decoration: none;
+}
+a img {
+    border: solid 6px;
+}
+.post-button a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #3399FF;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20% 12px 20% 12px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.post-button a:hover, .post-button li a:focus {
+    background-color: #9A3334;
+}
+/*sections------------------------------------------------------------------- */
+body {
+    background-color: black;
+    background-image: url("https://am2012.brighton.domains/ci435/sem1/images/network_background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, "Times New Roman", Times, Serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+}
+#wrapper {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+main {
+    grid-area: main;
+}
+article	{
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+header {
+}
+nav	{
+}
+#week1 {
+    grid-area: week1;
+}
+#week2 {
+    grid-area: week2;
+}
+#week3 {
+    grid-area: week3;
+}
+#week4 {
+    grid-area: week4;
+}
+#week5 {
+    grid-area: week5;
+}
+#week6 {
+    grid-area: week6;
+}
+#week7 {
+    grid-area: week7;
+}
+#timetable {
+    grid-area: timetable;
+}
+.banner {
+    grid-area: banner;
+}
+.menu {
+    grid-area: menu;
+    color: white;
+    margin-bottom: 1.5em;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    display: block; /*Displays 'menu' vertically*/
+    list-style-type: none;
+    background-color: none;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.current {
+    display: block;
+    background-color: black;
+    margin-right: 4px;
+    text-decoration: none;
+    border: 12px solid black;
+}
+.menu a {
+    display: block;
+    color: #3399FF;
+    background-color: black;
+    margin-right: 4px;
+    text-decoration: none;
+    border: 12px solid black;
+}
+.menu a:hover, .menu a:focus {
+    background-color: #3399FF;
+    color: white;
+    border: 12px solid #3399FF;
+}
+.posts {
+    list-style: none;
+    margin-right: 40px;
+}
+.posts li {
+    margin-bottom: 2rem;
+}
+.post {
+    background-color: black;
+    padding: 4px 8px;
+}
+.post p {
+    color: white;
+}
+.clear {
+    clear: both;
+}
+.overlay {
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid black;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.pop-up-window {
+    padding: 30px;
+    top: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    transition: opacity 2s;
+}
+.pop-up-window:target {
+    opacity: 1;
+}
+.pop-up-window .close {
+    position: fixed;
+    transition: opacity 2s;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3399FF;
+}
+.pop-up-window .close:hover {
+    color: #9A3334;
+}
+.video-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+iframe	{
+  width: 100%;
+  height: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex; 
+}
+.card-content {
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 1.25em 1.25em 0.3em 0;
+  padding: 1em;
+}
+.media	{
+  margin: 0;
+  padding: 0;
+}
+.media li	{
+  margin: 0;
+  padding: 0;
+}
+#references ol {
+  max-width: 26em;
+  word-wrap: break-word;
+}
+#references li {
+    margin-bottom: 20px;
+}
+/*headings------------------------------------------------------------------- */
+h1	{
+    font-family: 'Strait', sans-serif;
+    color: #3399FF;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+}
+h2	{
+    font-family: 'Strait', sans-serif;
+    color: #3399FF;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+h3 	{
+    font-family: 'Strait', sans-serif;
+    color: #3399FF;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+h4 {
+    font-family: 'Strait', sans-serif;
+    color: #3399FF;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+/*grouping------------------------------------------------------------------- */
+p	{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+    text-align: left;
+}
+p.dropcap:first-letter {
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #9A3334;
+    font-size: 5em;
+    line-height: 0.2;
+    margin: 20px 5px 0 0;
+}
+blockquote	{
+}
+/*tables--------------------------------------------------------------------- */
+table {
+    border: 1px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+}
+td {
+    border: 1px solid black;
+}
+/*lists---------------------------------------------------------------------- */
+ul	{
+}
+li	{
+    font-size: 1.2rem;
+}
+ol	{
+}
+dl	{
+}
+dt	{
+}
+dd	{
+}
+/*text----------------------------------------------------------------------- */
+em	{
+}
+strong	{
+}
+small	{
+}
+code {
+    word-wrap: break-word;
+}
+cite	{
+}
+time	{
+}
+/*forms---------------------------------------------------------------------- */
+label {
+    display: block;
+}
+input {
+    display: block;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #3399FF;
+    border-radius: 10px 10px 10px 10px;
+    padding: 12px 12px 12px 12px;
+    color: white;
+    margin-top: 2rem;
+}
+textarea {
+    width: 80%;
+    height: 90px;
+}
+legend {
+    text-align: center;
+}
+/*image---------------------------------------------------------------------- */
+figure	{
+    text-align: center;
+}
+figcaption	{
+    text-align: left;
+}
+img	{
+    max-width: 100%;
+    height: auto;
+    border: solid 1px;
+}
+.side-by-side img {
+    width: 46%;
+    height: auto;
+}
+/*mobile & desktop changes--------------------------------------------------- */
+/*tablet portrait orientation - 2 columns*/
+@media (min-width:40em) {
+    #wrapper {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas:
+        "banner  banner"
+        "menu  menu"
+        "main  aside"
+        "footer  footer";
+    }
+    .banner {
+        padding: 0 0 0 3em;
+    }
+    .posts {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas:
+        "week1  week2"
+        "week3  week4"
+        "week5  week6"
+        "week7  week8"
+        "week9  week9";
+    }
+    .menu {
+        background-color: black;
+        padding: 1em 0 1em 3em;
+    }
+    .menu li {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+    .menu a {
+        display: inline;
+        padding: 0;
+    }
+    .overlay {
+        top: 2em;
+        bottom: 2em;
+        right: 4em;
+        left: 4em;
+    }
+    .card { width: 50%; }
+    .fltlt {
+        float: left;
+        width: 60%;
+        margin-right: 8px;
+    }
+    .fltrt {
+        float: right;
+        width: 60%;
+        margin-left: 8px;
+    }
+}
+/*tablet landscape orientation and above - 3 columns*/
+@media (min-width:70em) {
+    #wrapper {
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-areas:
+        "banner  banner  banner"
+        "menu  menu  menu"
+        "main  main  aside"
+        "footer  footer  footer";
+    }
+    .posts {
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-areas:
+        "week1  week2  week3"
+        "week4  week5  week6"
+        "week7  week8  week9";
+    }
+    .overlay {
+        top: 4em;
+        bottom: 4em;
+        right: 14em;
+        left: 14em;
+    }
+    .card { width: 33.33%; }
+}

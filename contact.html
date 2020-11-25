@@ -1,0 +1,93 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en" id="top"><!--default language of the document content -->
+	
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/normalise.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<!--character encoding for the document (Unicode) -->
+		<title>Learning Journal</title><!--web page title -->
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<!--The 'wrapper' contains all the page content-->
+	
+    <header class="banner"><!--The main heading for the page -->
+		<h1>CI435</h1>
+		<h2>Contact</h2>
+	</header>
+	
+    <nav class="menu"><!--The primary navigation for the page -->
+	<ul>
+		<li><a href="index.html">Learning Journal</a></li>
+		<li><a href="tutorial.html">Tutorial</a></li>
+        <li class="current">Contact Me</li>
+	</ul>
+	</nav>
+    
+    <main class="clear"><!--The main page content -->
+    
+    <form id="contact-form">
+        <fieldset>
+            <legend>Your contact details</legend>
+            <label for="name">Name <em>(required)</em></label>
+            <input type="text" id="name" required placeholder="Forename + Surname" />
+            <label for="email">Email address <em>(required)</em></label>
+            <input type="text" id="email" required placeholder="example@server.co.uk" />
+            <label for="url">Website address</label>
+            <input type="url" id="url" />
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your comments</legend>
+            <label for="message">Message <em>(required)</em>:</label>
+            <textarea id="message" required></textarea>
+        </fieldset>
+        
+        <input type="submit" value="Click to send" />
+    </form>
+    
+    </main><!--Close main page content -->
+    
+    
+    <aside>
+        <form id="more-info">
+            <fieldset>
+                <legend>Your personal details <em>(optional)</em></legend>
+                <label for="date">Date of birth</label>
+                <input id="date" type="date" />
+                <label for="color">Favourite colour</label>
+                <input id="color" type="color" />
+                <label for="number">Age</label>
+                <input id="number" type="number" min=0 max=100 step=5 />
+            </fieldset>
+            
+            <fieldset>
+                <legend>Would you like more information?</legend>
+                <label for="information-yes">
+                    <input type="radio" id="information-yes" 
+                  name="information" value="yes" />
+                  Yes please
+                </label>
+                <label for="information-no">
+                    <input type="radio" id="information-no" 
+                  name="information" value="no" checked />
+                  No thanks
+                </label>
+            </fieldset>
+        </form>
+    </aside>
+ 
+  
+	<footer><!--Footer content -->
+	    <div><a href="#top">Go to top</a></div>
+		<small>&copy; Author, 2019</small>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->

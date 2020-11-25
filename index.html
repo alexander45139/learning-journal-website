@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" id="top"><!--default language of the document content -->
+	
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+        <link href="css/normalise.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<!--character encoding for the document (Unicode) -->
+		<title>Learning Journal</title><!--web page title -->
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<!--The 'wrapper' contains all the page content-->
+	
+	
+    <header class="banner"><!--The main heading for the page -->
+		<h1>CI435</h1>
+		<h2>Learning Journal</h2>
+	</header>
+	
+	
+    <nav id="nav" class="menu"><!--The primary navigation for the page -->
+	<ul>
+		<li class="current">Learning Journal</li>
+		<li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+	</ul>
+	</nav>
+    
+    
+    <main class="clear"><!--The main page content -->
+        <h2>Weekly Posts</h2>
+        <ol class="posts">
+            <li id="week1">
+                <div class="post-button">
+                    <a href="#week1-pop-up">1. Creating a basic HTML website</a>
+                </div>
+                <article id="week1-pop-up" class="overlay">
+                    <div class="pop-up-window">
+            			<header class="post">
+            			    <a class="close" href="##">×</a>
+            			    <h3>Week 1: Creating a basic HTML website</h3>
+            			    <p>Published on <time datetime="2019-10-05"><strong>5 October 2019</strong></time></p>
+            			</header>
+            			
+            			<h4>What I Have Accomplished</h4>
+                        <p>Three web pages were created inside the CI435 folder:</p>
+                        <ul>
+                            <li>Learning Journal (home page)</li>
+            		        <li>Tutorial</li>
+            		        <li>Contact</li>
+            		    </ul>
+            	        <p class="dropcap">On each page I allowed there only to be two links in the navigation section, which listed all three pages. The unlinked item on the list is the name of the current web page because it prevents the user to click on the same again but also indicating where on the navigation bar the web page is.</p>
+            			<p>Using the <code>&lt;a&gt;</code> tags to allow the user to click on a piece of text, which links them to another web page (defined in <code>&lt;href&gt;</code> inside the tag).</p>
+            			<p>I created two lists. One ordered and the other unordered using <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> tags respectively. This list is ordered because I am listing steps of what I did in chronological order.</p>
+            			<p>Each page has the title of the website in the Header 1 tag/font and Header 2 tag displayed the web page's name below. The title can also be viewed on the tab bar at the top of the browser. I added this title in the title tag inside the head tag.</p>
+            			<p>Each page has the title of the website in the Header 1 tag/font and Header 2 tag displayed the web page's name below. The title can also be viewed on the tab bar at the top of the browser. I added this title in the title tag inside the head tag.</p>
+            			<p>'images' and 'css' are directories (folders) that will contain CCS scripts (in 'css') to define the layout and format of the website and images (in 'images') to be stored in one place in order to keep all the different files categorised in different directories.</p>
+                        <figure>
+                        <img src="images/screenshot1.JPG"  />
+                        <figcaption>
+                            The file layout of this website. The three HTML files can be clearly seen here, in the root folder, where the domain URL begins.
+                            <br />
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        
+                        <h4>Research</h4>
+                        <p class="dropcap">This web page is written in HTML5 because it is the up to date version of this programming language. Most websites have the standards that are set for attributes and elements, which are included in this version. <a href="#ref5">[5]</a></p>
+                        <p>The W3C Markup Validation Service  is a useful tool where copied the URL into its search bar and it analysed my HTML code. The syntax analysis tool returned all the errors I had made in my code and suggests solutions in order to fix them. <a href="#ref1">[1]</a></p>
+                    </div>
+                </article>
+    		</li>
+    		
+    		
+            <li id="week2">
+                <div class="post-button">
+                    <a href="#week2-pop-up">2. Marking up content in the Learning Journal</a>
+                </div>
+                <article id="week2-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 2: Marking up content in the Learning Journal</h3>
+                            <p>Published on <time datetime="2019-10-12"><strong>12 October 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p class="dropcap">Surrounding the tag names mentioned with the <code>code</code> tag to highlight the name of tag in order to distinguish it from paragraph (normal) text.</p>
+                        <p>Recognise the difference between absolute and relative links.</p>
+                        <p>I've created anchors, which are linked text that links the user to another part of the same page. The links below the heading "Weekly Posts" are an example of anchors where each link contains a # before the name of the ID defined in each Heading 3 tag. When the link is clicked on, the page automatically scrolls to the element with the particular id.</p>
+                        <p>A <code>&lt;figure&gt;</code> tag is for an image to be placed into and its sub-tag, <code>&lt;figcaption&gt;</code>, provides the description of the image element above.</p>
+                        <p>I placed the <code>time</code> tag in each Weekly Post where the date published is given. This is used for search engines to easily read this article's date and so they can relevance it in its results.</p>
+                        
+                        <h4>Research</h4>
+                        <p class="dropcap">Upon further research, I discovered that self-contained tag where the header and footer tags can be used inside to set the content inside <code>&lt;article&gt;</code> as its own document. <a href="#ref6">[6]</a></p>
+                        <p>Every element contains an opening tag and a closing tag where its content is sandwiched in between. The opening tag has the name of the tag and the closing tag is the same apart from the forward slash before the name. The length of the element is determined by its content (e.g. length of the text inside). <a href="#ref9">[9]</a></p>
+                        <p>Block elements are sections of a website that start on a new line. Their width takes up the space of its parent element. Examples include <code>&lt;p&gt;</code> (paragraph), <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>. <a href="#ref7">[7]</a></p>
+                        <p>Contained inside these elements are inline elements. <code>&lt;strong&gt;</code> and <code>&lt;small&gt;</code> are examples of elements that do not start a new line on a web page. The maximum width of the element equals the width of its parent block line element and they usually change the style of the text (e.g. <code>&lt;strong&gt;</code> increases the thickness of the text). <a href="#ref7">[7]</a></p>
+                        <p>Absolute links are web paths to an external website. An example in HTML code would be <code>&lt;a href="http://am2012.brighton.domains/ci435/index.html"&gt;Text to click on here&lt;/a&gt;</code>. These full URLs can be found in the <a href="#references">reference list</a>. <a href="#ref8">[8]</a></p>
+                        <p>Relative paths are internal links where the URL begins from the next directory from the current HTML file. They are found in the <a href="#nav">navigation menu</a>. In HTML, one would create a relative path by establishing an ID to the element that the link would go to (e.g. <code>&lt;p id="elementName"&gt;Text&lt;p&gt;</code>). The link would contain a # before the name of the element's ID as seen here: <code>&lt;a href="#elementName"&gt;Text to click on here&lt;/a&gt;</code>. <a href="#ref4">[4]</a></p>
+                    </div>
+                </article>
+            </li>
+            
+            
+            <li id="week3">
+                <div class="post-button">
+                    <a href="#week3-pop-up">3. More HTML markup</a>
+                </div>
+                <article id="week3-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 3: More HTML markup</h3>
+                            <p>Published on <time datetime="2019-10-18"><strong>18 October 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p>I created a <a href="#timetable">table</a>. The <code>&lt;table&gt;</code> tag contains sub-tags:</p>
+                        <ul>
+                            <li><code>&lt;tr&gt;</code> - the first sub-tag used, which establishes the next row.</li>
+                            <li><code>&lt;td&gt;</code> - contains, under <code>&lt;tr&gt;</code>, the content of the next table cell.</li>
+                            <li><code>&lt;th&gt;</code> - exactly the same as <code>&lt;td&gt;</code> except it alters the font inside as a heading style and it's used as the first row.</li>
+                        </ul>
+                        <p>The example below has the tag of <code>&lt;blockquote&gt;</code>, which indents the content inside. The link below uses <code>&lt;cite&gt;</code>, which changes the style of the content to italics.</p>
+                        <blockquote>
+                            <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation.</p>
+                            <footer>
+                                <cite>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements reference - HTML: Hypertext Markup Language | MDN</a>
+                                </cite>
+                            </footer>
+                        </blockquote>
+                        <p>As well as text, images can also be a link to another URL. An <code>&lt;a&gt;</code> opening tag is written where the property of <code>href</code> has the value of the URL. <code>target="_blank"</code> opens up a new tab in the browser, which then executes URL. Before closing the tag, the <code>img</code> element is produced with the relative link to the image file defined in <code>src</code>. <code>alt</code> has text stored, which describes the picture, to display if the image cannot be located by the browser.</p>
+                        <figure>
+                            <a href="https://www.w3.org/html/logo/" target="_blank">
+                                <img src="images/HTML5Logo.png" alt="Logo of HTML 5"  />
+                            </a>
+                        </figure>
+                        <p><code>&lt;figure&gt;</code> creates a  line is below to above content, centres all content inside and indents them. If the image can't load on the screen, "Logo of HTML 5" will appear in its place, which is defined inside <code>&lt;img&gt;</code> as the alt attribute.</p>
+                        
+                        <figure>
+                            <img src="images/Errors3.JPG"  />
+                            <figcaption>
+                                Only one error was found. I amended this because I had two end <code>&lt;/strong&gt;</code> tags where I had one start tag. The first one had no content inside, so I deleted it. <a href="#ref1">[1]</a>
+                                <br />
+                                <small>Screenshot &copy; Author of this Website</small>
+                            </figcaption>
+                        </figure>
+                        
+                        <h4>Research</h4>
+                        <p>All the MDN elements are found in Reference <a href="#ref10">[10]</a>.</p>
+                        <p>Some of the elements I found interesting were:</p>
+                        <ul>
+                            <li><code>&lt;link&gt;</code> references code from an external document, such as a JavaScript or CSS file. This allows a resource to be linked to many HTML documents that use this tag.</li>
+                            <li><code>&lt;blockquote&gt;</code> creates a new line and indents it to display isolated text in its area to display it as quote.</li>
+                            <li><code>&lt;video&gt;</code> embeds a video file, which is stored in a directory on the web site, on the web page. This tag also has a media player to provide playback for the user.</li>
+                            <li><code>&lt;iframe&gt;</code> embeds another HTML page in the area of the tag.</li>
+                            <li><code>&lt;details&gt;</code> displays a toggle button that reveals the specified content (in between the tags) when clicked on by the user. It disappears when clicks it again.</li>
+                            <li><code>&lt;center&gt;</code> horizontally aligns the content to the centre of the parent block element.</li>
+                        </ul>
+                        <p><code>&lt;cite&gt;</code> is used to reference the above quote inside <code>&lt;blockquote&gt;</code>. The content inside could be a link, name of a play/book, the author and the date published. It can also be used in the <code>&lt;q&gt;</code> tag. <a href="#ref11">[11]</a></p>
+                        <p>Standard web structure requires: <a href="#ref12">[12]</a></p>
+                        <ol>
+                            <li><code>&lt;header&gt;</code> - the top part of the page, which usually displays the website's logo, title and heading. This content, apart from the heading, stays constant on every page of the site.</li>
+                            <li><code>&lt;nav&gt;</code> - a navigation bar to contain the links to the main pages of the website. Text, articles, images and videos that show up only on this page go inside this tag.</li>
+                            <li><code>&lt;main&gt;</code> - the main content will have a large area of unique content for the page.</li>
+                            <li><code>&lt;aside&gt;</code> - adverts, quotes or other links go inside here as a small sidebar to the main content. If the main content is an article, this element would be used as an information area giving the name the author and the date it was published or having links to other similar articles.</li>
+                            <li><code>&lt;footer&gt;</code> - the bottom part of the page, which usually displays the website's copyright information and extra information that was not important enough for the header element. Like the header, the content here also normally stays the same on every web page on this site.</li>
+                        </ol>
+                        <p>Screen readers is a program that the visually impaired use to navigate and read a website. The program looks at the HTML and finds the main tags (header, footer etc.) and asks the user, which section to use. For example, if they want to go to another page on the site, the program can take them to <code>&lt;nav&gt;</code> where all the hyperlinks will be given as options to select, which are read by the program. When reading text, only the content inside the tag will be read until the close tag is encountered.<a href="#ref13">[13]</a></p>
+                    </div>
+                </article>
+            </li>
+            
+            
+            <li id="week4">
+                <div class="post-button">
+                    <a href="#week4-pop-up">4. CSS basics</a>
+                </div>
+                <article id="week4-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 4: CSS basics</h3>
+                            <p>Published on <time datetime="2019-10-22"><strong>22 October 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p class="dropcap">From <a href="https://necolas.github.io/normalize.css/" target="_blank">https://necolas.github.io/normalize.css/</a>, I uploaded the file, normalise.css, to my web server under the directory called 'css'. On each page of this website, a <code>&lt;link&gt;</code> tag was placed inside <code>&lt;header&gt;</code>. The <code>&lt;link&gt;</code> element defined the file type as <code>rel="stylesheet"</code> and the CSS file name, normalise.css. This element pulls the code from the file and utilises it in this HTML page. All the styles defined in normilised.css are applied to the elements inside index.html and the other pages.</p>
+                        <p>The file mentioned above was to define the elements to the standard form of any website in order to ensure that it is user friendly. This is standard across most websites. However, 'stylesheet.css' is the file with my written changes to the layout and format of the website. It is linked to HTML pages the same way as 'normalise.css' is.</p>
+                        <p>The body element was styled by setting the attributes inside the body selector (in 'stylesheet.css'):</p>
+                        <ol>
+                            <li><code>background-color</code> was set to <code>#F0F0F0</code>, which is a grey shade in hexadecimal. English written colours can be accepted but hexadecimal gives a more accurate measurement on the tone of the colours in order to provide a specific shade.</li>
+                            <li><code>font-family</code> defines the fonts of the text within the elements. This is given as a list in order of priority to be displayed. If the web browser cannot display the font (because it has record of it), then it will attempt to display the next in the list.</li>
+                            <li><code>color</code> sets the text to <code>#333</code>, which is shorthand for #333333 (a shade of black with hint of yellow).</li>
+                            <li><code>font-size</code> makes default for all text to be 16 pixels high.</li>
+                            <li><code>line-height</code> gives <code>20px</code> of space between each line of content.</li>
+                        </ol>
+                        <p>I styled an ID element called wrapper. In index.html, this ID is placed in a <code>&lt;div&gt;</code> tag. In stylesheet.css, the selector begins with a '#' before giving the name of the ID in order to indicate that the selector is an ID. The attributes defined were:</p>
+                        <ul>
+                            <li><code>max-width</code> means that the width of the entire element cannot expand <code>1000px</code>.</li>
+                            <li><code>margin-right</code> can vary any size, where the content's width ends.</li>
+                            <li><code>margin-left</code> can vary any size, where the content's width starts.</li>
+                            <li><code>background-color</code> set to white.</li>
+                            <li><code>padding-right</code> is the distance between the border of the element and the content on the right side.</li>
+                            <li><code>padding-left</code> is the distance between the border of the element and the content on the left side.</li>
+                        </ul>
+                        <p>Links can also be re-styled in CSS. Four states of <code>&lt;a&gt;</code> are established in the stylesheet.css:</p>
+                        <ul>
+                            <li>The multiple selectors <code>a:link, a:visited, a:active</code> (normal state, once it's been clicked on and whilst being clicked on respectively) all have their colour set to <code>#0090D2</code>, which is a shade of light blue.</li>
+                            <li><code>a:hover</code> is uniquely defined with its colour as <code>#0063A6</code> (a slightly darker blue) and no decoration of text, which means that the link will not be underlined whilst the mouse is hovering over the element.</li>
+                        </ul>
+                        <p>A class attribute was defined similarly to an ID. In CSS, instead of typing a '#' at the start of the selector, a '.' is given. The 'menu' attribute was placed in <code>&lt;nav&gt;</code>. The CSS selectors from 'menu':</p>
+                        <ul>
+                            <li><code>.menu li</code> alters the list tags (<code>&lt;li&gt;</code>) inside the menu class. The style type is set to none so that no bullet points can be shown, the font size is set to 18px, no left margin and a 20px distance between the elements and the bottom margin.</li>
+                            <li><code>.menu a</code> changes the look of the links in the menu class, such as redefining the colour, background colour, margin, border and giving no text decoration. The result shows white boxes with a blue outline and blue text.</li>
+                            <li><code>.menu a:hover</code> sets the look of the links, when hovered over, in the menu class. The alterations are a change in background colour (to blue) and colour (to white).</li>
+                        </ul>
+                        <p>For each <code>&lt;article&gt;</code>, the <code>&lt;header&gt;</code> section has a class named 'post' and it is defined in CSS with attributes setting length the top and bottom margins as 2 pixels and a background colour of <code>#CCC</code> (grey).</p>
+                        <figure>
+                        <img src="images/Errors4.JPG" alt="List of errors from this page from Week 4"  />
+                        <figcaption>
+                            <p>Errors are fixed in numbered order of the image above:</p>
+                            <ol>
+                                <li>I added an alt attribute and typed in text describing the image.</li>
+                                <li>Same fix for solution 1 above.</li>
+                                <li>Even though attribute does work, the standard rules need <code>border</code> to be defined in CSS.</li>
+                                <li>The tag was changed to <code>&lt;li&gt;</code> because the content inside is an item in a list.</li>
+                            </ol>
+                            <br />
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="side-by-side">
+                                <img src="images/Body_Before.JPG" alt="Before the body tag was altered"  /> <img src="images/Body_After.JPG" alt="After the body tag was altered"  />
+                            </div>
+                        <figcaption class="clear">
+                            <p>The two main differences made here are the font and the background colour. The grey colour is subtle but more decorative and the bolder text improves readability by giving it a grander presence.</p>
+                            <br />
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        
+                        <h4>Research</h4>
+                        <p class="dropcap">Inside the CSS files are selectors that target HTML tags, classes or ID's in order to style them. When the selector is a tag, all elements under the specified tag are targeted. <a href="#ref15">[15]</a></p>
+                        <p>Properties are then defined inside the selector. Examples of these attributes include colour, display, border and font-size. <a href="#ref16">[16]</a></p>
+                        <p>As well as normal selectors, there are pseudo selectors: <a href="#ref15">[15]</a></p>
+                        <ul>
+                            <li>Pseudo classes (e.g. <code>a:visited</code>) specifies the state of the element to target and all properties inside are used when the element is in that defined state.</li>
+                            <li>Pseudo elements are objects that are not in the HTML syntax. For example, <code>p::first-line</code> will affect only the first line of every paragraph content.</li>
+                        </ul>
+                        <p>CSS can be used to make changes to the font, size, colour and spacing of the HTML content. You can also lay out the columns and add animations. <a href="#ref17">[17]</a></p>
+                        <p>Inside a selector are declarations and each one is the sum of a <strong>property</strong> and its <em>property value</em>. For example, <code><strong>color</strong>: <em>blue</em>;</code> <a href="#ref18">[18]</a></p>
+                        <p>There are two types of CSS properties that styles text: <a href="#ref19">[19]</a></p>
+                        <ul>
+                            <li>Font style properties alter the font size, whether it is bold, italic or underlined and its colour. E.g. <code>font-family</code> and <code>font-size</code>, <code>color</code>.</li>
+                            <li>Text layout styles are properties that manipulating the spacing, alignment within the element and gaps between the letters. E.g. <code>margin-left</code>, <code>padding-right</code> and <code>align</code>.</li>
+                        </ul>
+                        <p>Type selectors target tag names that affect all the elements with those tags. Class selectors select elements with an applied class and ID selectors target elements with IDs. A universal selector is the most different because the selector is a '*' that targets all elements in the HTML document. <a href="#ref20">[20]</a></p>
+                        <p>Class selectors can be targeted on specific tags. This selector is written as <code>tagType.className</code>. <code>p.eat</code> will only affect the paragraph tags (<code>&lt;p&gt;</code>) with the class of <code>eat</code>. Two classes can also be selected, and it's written as <code>class1.class2</code>, where the classes class1 and class2 are affected. <a href="#ref20">[20]</a></p>
+                        <p>CSS files are laid out as cascading selectors in order of the parent elements down to the child elements. Each element inherits properties already defined in its parent's elements. <a href="#ref21">[21]</a></p>
+                    </div>
+                </article>
+            </li>
+            
+            
+            <li id="week5">
+                <div class="post-button">
+                    <a href="#week5-pop-up">5. Styling Text in CSS</a>
+                </div>
+                <article id="week5-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 5: Styling Text in CSS</h3>
+                            <p>Published on <time datetime="2019-11-02"><strong>2 November 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p><code>font-family</code> inside the body selector was rewritten as <code>Georgia, "Times New Roman", Times, serif</code> with the second font having speech marks in order to contain the name so that the browser can read the spaces as part of the one font. They were changed because they fonts more suitable for reading. Just like before, the most preferred font is ordered first, each font is separated by commas, they have a default size of 16px.</p>
+                        <p>A <code>&lt;link&gt;</code> element was appended in the <code>&lt;head&gt;</code> section that adds a CSS script (<a href="https://fonts.googleapis.com/css?family=Strait" target="_blank">https://fonts.googleapis.com/css?family=Strait</a>) to this HTML page. 'Strait' is a Google-made specific font that needs an API in order to be used by websites. The CSS file retrieves the font from Google's free online font library.</p>
+                        <p>The selectors of <code>h1</code>, <code>h2</code> and <code>h3</code> (Heading 1, Heading 2 and Heading 3) define their fonts as <code>'Strait', sans-serif</code> as well as the font sizes, which are largest in order of h1, h2 and h3 in order to highlight Heading 1's prime importance.</p>
+                        <p>The paragraph tag's (<code>&lt;p&gt;</code>) selector, in CSS, alters the font's size to 1.25rem (1.25 times the size  of the root element, which would be <code>&lt;body&gt;</code> <a href="#ref14">[14]</a>), set <code>line-height</code> at 1.5 (1.5 of 1.25 rem), defines the margin spaces (in clockwise order of above, right, below and left), expands the indent (<code>text-indent</code>) by 2em (2 times the size of the font of this element).</p>
+                        <p class="dropcap">I tested a section of text by dropping its first capital letter after the opening tag using a class called "dropcap". Floating the element left allows the text to wrap around the first letter and increasing the margins provide better readability for the user to distinguish between the letters. It was designed in a class called "dropcap" and this pseudo element was a sub-selector of <code>&lt;p&gt;</code> so that only paragraph font(s) inside the class can initiate this change. <code>font-size</code> increases the font by 5 times, the colour is changed, the margins increase (right and bottom) and the element is floating left.</p>
+                        <p>I attempted aligning the paragraph fonts to the right of the screen, but it created a huge gap when inside a list item. It is now corrected to align left.</p>
+                        <p>The 'fltlt' class is created for images to float left and move the right margin for the text wrap around it. The class is always established in a <code>div</code> element. 'fltrt' is the class that performs the opposite (floating right). In order to ensure these classes don't affect the elements after, 'clear' was written. This class is added to the next element after the floated image.</p>
+                        <figure>
+                            <div class="fltlt">
+                                <img src="images/textBefore.JPG" alt="An screenshot of article on this website with the majority of the format as list"   />
+                                <br/>
+                                <img src="images/textAfter.JPG" alt="An screenshot of article on this website with the majority of the format as paragraphs"  />
+                            </div>
+                        <figcaption>
+                            <p>Most of my text was in list format and the font size looked too small and it wouldn't be accessible for the visually impaired. Some items in the lists had inline paragraph tags, which had larger font sizes. The text changing size in one list item prevented consistency with the layout of web page. To fix these problems I changed all the main lists after the Heading 4's to paragraphs (which had also increased the font size) and kept sub-lists that were in the original lists. To make the remaining lists readable, I changed the CSS <code>font-size</code> in the <code>li</code> selector to 1.2rem.</p>
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        
+                        <h4 class="clear">Research</h4>
+                        <figure>
+                            <div class="fltrt">
+                                <img src="images/boxmodel.png" alt="the box model of every element" />
+                            </div>
+                        <figcaption>
+                            <p>Each element is represented by four layers of a box:</p>
+                            <ol>
+                                <li>Content edge is the first layer that surrounds the content. This can be adjusted using the width and height properties.</li>
+                                <li>Padding edge is the next layer that allows spacing between the content edge and the border edge.</li>
+                                <li>Border edge is boundary between the element and its outside.</li>
+                                <li>Margin edge increases the edge outside of the border to provide space around its neighbour elements. The <code>margin</code> properties control its size.</li>
+                            </ol>
+                            <small>Screenshot &copy; <a href="#ref28">[28]</a></small>
+                        </figcaption>
+                        </figure>
+                        <p class="clear">The area for non-replaced inline elements is determined by the CSS property called <code>line-height</code>. <a href="#ref28">[28]</a></p>
+                        <p>Each 'box' contains a list of properties, determined in the CSS using a selector, that define where it is on the page and how it looks. <a href="#ref29">[29]</a></p>
+                    </div>
+                </article>
+            </li>
+            
+            
+            <li id="week6">
+                <div class="post-button">
+                    <a href="#week6-pop-up">6. Making the Learning Journal page responsive</a>
+                </div>
+                <article id="week6-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 6: Making the Learning Journal page responsive</h3>
+                            <p>Published on <time datetime="2019-11-10"><strong>10 November 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p class="dropcap">In the <code>&lt;head&gt;</code> section, I added a meta element called a 'viewport' where all the content on this page matches the width of the device's screen. Now the website can be viewed on almost all devices due to the adjustments of the elements' scale and width. The same was added on the other pages to maintain consistency.</p>
+                        <p>In order to layout the page as a grid, all the main elements need to be unique. I added a class to the <code>&lt;header&gt;</code> that contains the Website's title and the current page's title. The navigation tag with the main links is also assigned a class.</p>
+                        <p>The headings, <code>h1</code>, <code>h2</code> and <code>h3</code>, all now align in the centre of the page because I included the property of <code>text-align</code> to the specific selectors.</p>
+                        <p>The <code>img</code> selector was given the attributes:</p>
+                        <ul>
+                            <li><code>max-width</code> prevents any image from exceeding 70% of the width of the parent element's size.</li>
+                            <li><code>height</code> is set to automatic, where the image's height, will adjust depending on the width in order to maintain the ratio of the height and width.</li>
+                            <li>A black <code>border</code> is established as a solid line that spans 1px outwards. The border is useful for the user to identify that the element is an image.</li>
+                        </ul>
+                        <p>For the menu to align centre on the page, <code>margin-left</code> was changed to 15% in the selector of the 'menu' classes list items. However, this alteration did not work for the mobile version so instead, the float property was applied to the mobile widths.</p>
+                        <p>Two <code>@media</code> selectors were produced in stylesheet.css for providing changes on devices with desktop and tablet screens. The code outside the media targets are default and mobile properties.</p>
+                        <p>A grid was created inside the <code>div</code> element with the ID of 'wrapper' and the default arrangement of the main elements were stacked underneath each other. Using <code>@media</code>, screens with a minimum of 50em are laid out in two columns (for tablets) whereas 60em or bigger screens have three columns (for desktops).</p>
+                        <p>Unfortunately, the elements' widths stopped adjusting at two Android screens wide. I tried making the default 'wrapper' selector the desktop three column whilst the element changes depending on the maximum width rather than minimum. Unfortunately, the alterations made no difference. Using the inspection tool on Chrome, I worked out that <code>display: grid;</code> did not allow the content inside the wrapper match its width. However, removing this line of code would affect <code>the grid-template-areas</code>. So, <code>display: grid</code> was moved to the 'wrapper' with the tablet version. No grid areas were defined in the default 'wrapper' selector (mobile version) and so the mobile will display all content as one column.</p>
+                        <p>Originally, the menu links were stacked vertically. In CSS, I established the line of code, <code>display: block</code>, inside the selectors <code>.menu li</code> and <code>.menu a</code> so that the content and the link spans the width of the 'wrapper' element.</p>
+                        <p>Another 'menu' selector was added that targets link elements when they are clicked on (state is called 'focus'). The padding property's four values were changed to expand the size of the elements.</p>
+                        <p>The 'menu' selectors for <code>&lt;a&gt;</code> and <code>&lt;a&gt;</code> are added to the tablet changes (@media). The display property aligns the menu links horizontally. The padding is set for the 'banner' (to align to the centre of the page) and 'menu' (to provide space between the links and the elements below.</p>
+                        <p>When using the <code>&lt;code&gt;</code> tag, the content inside does not keep everything on one line in a paragraph. In CSS, I added, in the 'code' selector, the property, <code>word-wrap: break-word</code>. This attribute breaks a string when it exceeds the end of the element and creates a newline to add in the rest of the characters. <a href="#ref22">[22]</a></p>
+                        <p>Using <a href="http://mobiletest.me/iphone_5_emulator/?u=http://am2012.brighton.domains/ci435/index.html#top" target="_blank">MobileTest.me (iPhone 5 emulator)</a>, I discovered links that exceed the width of the wrapper element, extend the width of the screen. To restore the width, I placed the same rule that is in the code selector in the <code>a</code> selector.</p>
+                        <figure>
+                            <img src="images/Errors6.png" />
+                        <figcaption>
+                            <p>Errors are fixed in numbered order of the image above:</p>
+                            <ol>
+                                <li><code>&lt;!DOCTYPE html&gt;</code> was written as the first above the <code>&lt;html&gt;</code> element.</li>
+                                <li>The attribute was removed in the table tag. There is only a property to align text in CSS so instead, in the <code>&lt;table&gt;</code> targetter, I added <code>margin-left</code> and <code>margin-right</code> to set both to auto in order to automatically align the table to the centre. <a href="ref24">[24]</a></li>
+                                <li>The attribute was removed in the table tag and two new selectors were written in CSS, <code>table</code> and <code>td</code>. Both had properties of a dark border that spanned 1px. <a href="#ref23">[23]</a></li>
+                                <li>An image is yet to be added.</li>
+                                <li>The <code>ul</code> opening and closing tags were removed as I had no longer any intention to make a list.</li>
+                                <li>The end tag was replaced with <code>&lt;/p&gt;</code> to match the type of tag that was opened outside the content.</li>
+                                <li>An alt property was appended in the <code>img</code> tag to describe the image.</li>
+                                <li>Same fix as the solution above.</li>
+                                <li>ul was replaced as p.</li>
+                                <li>Two <code>&lt;figcaption&gt;</code>'s were used inside one <code>figure</code> element. I separated them by closing off the first <code>figure</code> tag after the first <code>figcaption</code> closing tag and opening another <code>figure</code> element.</li>
+                                <li>The solution above also fixed this problem.</li>
+                                <li>The solution two lists above also fixed this problem.</li>
+                                <li>An alt property was appended in the <code>img</code> tag to describe the image.</li>
+                            </ol>
+                            <br />
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        <p class="clear">After reordering the articles in ascending order and shifting the ID's from the h1 elements to the article tags, I adapted the code from <a href="#ref25">[25]</a> to create a popup window for each weekly post:</p>
+                        <ol>
+                            <li>Firstly, a link was created with the src to an anchor ID named, "week1-pop-up".</li>
+                            <li>The ID is in the element below (a <code>&lt;div&gt;</code>), which also contains the class of 'overlay'.</li>
+                            <li>Inside this element is the <code>&lt;article&gt;</code> of Week 1 and its content where I've placed a class, 'popup-window'.</li>
+                            <li>
+                                <p>In CSS, 'overlay' is selected with the properties:</p>
+                                <ul>
+                                    <li><code>position</code> of the element is fixed in the centre of the screen no matter how far the page is scrolled.</li>
+                                    <li><code>overflow</code> provides a scrollbar if the content exceeds the space of the element.</li>
+                                    <li><code>top, bottom, left, right</code> establishes the distances from the edges of page from each side of the box element.</li>
+                                    <li><code>transition</code> is a fade effect that lasts 1 second when the pop-up appears.</li>
+                                    <li><code>background</code> colour of the element is white.</li>
+                                    <li>Initial <code>visibility</code> is <code>hidden</code>.</li>
+                                </ul>
+                                <p>A second selector for overlay, where state is <code>target</code>ed in the URL, alters the <code>visibility</code> to reveal the box within the element.</p>
+                            </li>
+                            <li>The class of <code>pop-up-window</code> has defining attributes in CSS that codes the margins, padding, colour of the background and border. When its state is targeted (anchor link is clicked on), its opacity is true for the content to show.</li>
+                            <li>The element with the class of 'close' in a 'pop-up-window' element is aligned using the top and right properties. The <code>font-size</code> is increased and is a blue colour but changes when hovered over.</li>
+                            <li>Now that there is a list of links to show the content of each week, the Weekly Post links are no longer needed because barely any scrolling is required in order to find the next post. The Weekly Posts section is replaced with the newly made pop-up links.</li>
+                        </ol>
+                        <p>The pop-ups on this page are never intrusive because they never shift the pre-existing content.</p>
+                        <p>In the <code>figure</code> selector, I wrote a property (<code>text-align</code>) to centre all content inside, which will be the images. I did this so that two images beneath each other would look smarter on the page.</p>
+                        <p>'fltlt' and 'fltrt' classes each have an appended property that adjusts the content's size to 60% of the viewport for there to be space for the description of the image(s).</p>
+                        <p><code>figcaption</code>'s selector included the <code>text-align</code> property to align its text to the left because it left uneven gaps between the bullet/numbered points and the text when there are lists in this tag.</p>
+                        <figure>
+                            <div class="fltrt">
+                                <img src="images/new_weekly_posts.JPG" />
+                            </div>
+                        <figcaption>
+                            <p>The <code>&lt;main&gt;</code> section contains the content with the headings, Weekly Posts and My Timetable. <code>&lt;aside&gt;</code>, where the research references are listed, is placed beside <code>&lt;main&gt;</code> in desktop and tablet views.</p>
+                            <p>The 'posts' class now lays out the ID elements of week1, week2, week3 to week9 (in the same way it laid out the post1 to post6 areas), which are no longer listed in the 'wrapper' selector.</p>
+                            <br />
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        <figure class="clear">
+                            <img src="images/layout_design.png" alt="design layouts for desktop, tablet and mobile screens" />
+                        <figcaption>
+                            <p>The design of the layouts for three different devices. The biggest difference will be that each version will have different columns: one for mobile; two for tablet; three for desktop. The wider the screen, the more columns of content there should be so that the full width of the viewport can utilised, which reduces the height so the user doesn't have the use the scrollbar as much.</p>
+                            <p>The header and navigation/menu section will be static on every viewport size, whereas the links, underneath the headings of Weekly Posts and References, are arranged in columns.</p>
+                            <small>Drawing &copy; Author of this website</small>
+                        </figcaption>
+                        </figure>
+                        <p>Developer tools are allowing me to make temporary changes on any web page (in HTML, CSS and JS) in order to display those changes in the browser. This is useful because if I make a huge mistake that ruins the entire page, those changes won't be saved. I can also use the inspector tool to analyse any element's four layers (e.g. the margin).</p>
+                        
+                        <h4>Research</h4>
+                        <p class="dropcap">The viewport is the visible area of the page and it can now vary in size after the introduction of mobile and tablet devices. Setting the viewport to scale the content down to fit the screen avoided a phone user having to scroll sideways on a website designed for a desktop computer. <a href="#ref31">[31]</a></p>
+                        <p>53% of adults access the web via mobile phones. Of that percentage, 71% expect a page load as fast or faster than if they used a computer. <a href="#ref32">[32]</a></p>
+                        <p>A grid is 2D layout system that arranges content in rows and columns. It is a collection of horizontal lines in which blocks of content are placed. The gutters are the gaps between the rows/columns, which are set as measurement in CSS for <code>grid-gap</code>. <a href="#ref33">[33]</a></p>
+                        <p><code>grid-template-columns</code> represents the fractions each column of the space in the container. Now, all my columns are set to <code>3fr</code>. <a href="#ref33">[33]</a></p>
+                        <p>An <code>@media</code> selector in CSS is known as a media query, which contains a series of selectors and their properties to be implemented when the viewport is at certain size. This allows the site to adapt its content for different screen widths. For example, fonts can alter size or paragraphs can change their spacing. <a href="#ref34">[34]</a></p>
+                        
+                        
+                    </div>
+                </article>
+            </li>
+            
+            
+            <li id="week7">
+                <div class="post-button">
+                    <a href="#week7-pop-up">7. Flexible media</a>
+                </div>
+                <article id="week7-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 7: Flexible media</h3>
+                            <p>Published on <time datetime="2019-11-17"><strong>17 November 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p><code>text-indent</code> property was removed since my paragraphs are generally small and frequent, and it disturbed the look of the document.</p>
+                        <figure>
+                            <img src="images/menu_bar.png" />
+                        <figcaption>
+                            <p>The navigation menu separated the website's title and its content with a horizontal red <code>block</code>. Inside this block are the menu's links. Originally, they had a blue border with text and this style did not stylistically look part of the bar. So, I extended the length of every <code>&lt;a&gt;</code> element's border to be 12px. The background colour is red but changes to green when hovered over / clicked. Making these links (almost) fit the size of the menu bar allows them to look as if they belong there.</p>
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        <p class="dropcap">I created a testing area named "flexible_media_test.html" with the heading of 'Flexible media examples' and embedded CSS code using the <code>&lt;style&gt;</code> tag. The 'type' attribute is added in the tag to specify that the code below is CSS.</p>
+                        <p>Using the <a href="http://www.stripegenerator.com" target="_blank">Stripe Generator tool</a>, an image was made, downloaded and embedded in the <code>&lt;header&gt;</code> of <code>flexible_media_test.html</code> with a CSS class that has the property to hide overflowing content. This means that the image crops itself when the viewport is minimised.</p>
+                        <p>The same image was placed below the heading with CSS properties of width at 100% (filling the width of the viewport) and its <code>max-width</code> at 900px. When the viewport exceeds 900 pixels, the picture can no longer adjust its size to fill the screen.</p>
+                        <p>An article section was made with an image and text below. In the CSS section, a selector for any <code>&lt;img&gt;</code> elements in an <code>&lt;article&gt;</code> float to the left of the screen in addition to a margin and some padding properties. A 'clear' class is written underneath, which works the same as what was defined in <code>stylesheet.css</code>.</p>
+                        <p>In tutorial.html, an iframe element, which embeds a YouTube video, was placed in the <code>&lt;aside&gt;</code> section. Unfortunately, the video did not adjust its size when the viewport's width changes. Therefore, I wrote two classes, 'video-wrapper' and 'video-container', that are surrounding the video in new <code>div</code> elements placed in the mentioned order. The wrapper establishes the maximum width the element can have, and the container maintains the video's size. This allows the video's width to alter with the viewport whilst not changing its proportion between height and width.</p>
+                        <figure>
+                            <div class="fltlt">
+                                <img src="images/colour_scheme.JPG" />
+                            </div>
+                        <figcaption>
+                            <p>I found a suitable colour scheme to use for my website. In CSS, all colours were changed to black or the ones below in the scheme. <a href="#ref26">[26]</a></p>
+                            <small>Screenshot &copy; Author of this Website</small>
+                        </figcaption>
+                        </figure>
+                        <figure class="clear">
+                            <img src="images/colour_scheme_website.JPG" />
+                        <figcaption>
+                            <small>Screenshot &copy; <a href="#ref26">[26]</a></small>
+                        </figcaption>
+                        </figure>
+                        <p class="dropcap">After adjusting the <code>top</code> and <code>bottom</code> properties for <code>pop-up-window</code>, the <code>top</code> property of the 'close' class (close button) was set to -5 pixels because it had moved with <code>pop-up-window</code>. The anchor link was replaced with '##' because '#' kept taking the page to the top. Now when the close button is clicked, the pop-up window disappears and the page's position on the scroll remains.</p>
+                        <p>In the <code>@media</code> selectors, the <code>top</code>, <code>bottom</code>, <code>right</code> and <code>left</code> attributes for 'overlay' were defined to result in a small rectangular shape with the web page in the background.</p>
+                        <p>To prevent a menu link from "changing" position when going to another page, the class of 'current' was established that has all the same properties as <code>.menu a</code> except the colour is not defined in order to distinguish itself from the rest of the links.</p>
+                        <p>The 'close' button's position property was changed from absolute to fixed, which means that the 'x' button will constantly stay on the screen in the same position even when scrolling. 'top' and 'right' was also changed to position itself and I used the measured of <code>vm</code>, which is the distance from the edge of the viewport. This unit of measurement is useful to define when adjusting for different device widths.</p>
+                        <p>Unfortunately, 'overlay' cannot recognise vw so the close will not adjust with the rest of the pop-up container, therefore the properties of <code>top</code> and <code>right</code> are removed.</p>
+                        <p>'side-by-side' was created as a class that targets all <code>img</code> elements and shrinks them to 46% of the parent element's size in order to have two images next to each other.</p>
+                    </div>
+                </article>
+            </li>
+            
+            <li id="week8">
+                <div class="post-button">
+                    <a href="#week8-pop-up">8. CSS3 responsive layout</a>
+                </div>
+                <article id="week8-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 8: CSS3 responsive layout</h3>
+                            <p>Published on <time datetime="2019-11-24"><strong>24 November 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p class="dropcap">In CSS, I increased borderline of all the image elements that have URL anchor to 6px to make the red border more visible as it is the colour of links on this site.</p>
+                        <p>The tutorial.html layout was created by, inside the <code>&lt;main&gt;</code> content, had a <code>div</code> container with a class, 'instructions'. The content is set up as an ordered list where <code>ol</code> contains the class of 'cards', which has the properties to display as a box and all content can only be restricted inside this container. Each <code>li</code> (list item) element has the class of 'card', which displays the item as a box containing content. The <code>flex-direction</code> property in the selector of the 'card-content' class, which situates in every child element of <code>li</code>, shapes the box in a vertically narrow direction. 'card-content' also has properties that establish a solid border where the top corners are circular, and padding is established between it and the content. The width property is given different values for the three viewport sizes.</p>
+                        <p>I wrote an alternative class to 'cards' called 'media', where all images have no margin nor padding, which saves space on the screen to provide the largest possible image inside the container.</p>
+                    </div>
+                </article>
+            </li>
+            
+            <li id="week9">
+                <div class="post-button">
+                    <a href="#week9-pop-up">9. HTML and CSS forms</a>
+                </div>
+                <article id="week9-pop-up" class="overlay">
+                    <div class="pop-up-window">
+                        <header class="post">
+                            <a class="close" href="##">×</a>
+                            <h3>Week 9: HTML and CSS forms</h3>
+                            <p>Published on <time datetime="2019-12-01"><strong>1 December 2019</strong></time></p>
+                        </header>
+                        
+                        <h4>What I Have Accomplished</h4>
+                        <p>A form tag was written in contact.html, where it was given an ID named 'contact-form' for scripts to target this element.</p>
+                        <p>I added a <code>&lt;label&gt;</code> with a <code>for</code> attribute to specify the ID element ('name'), which it is associated with (which every label must have) <a href="#ref27">[27]</a> and an <code>&lt;input&gt;</code> where <code>type="text"</code> and the given ID of 'name'. The tags are produced below where the <code>for</code> and ID value is 'email'. 'url' is the <code>for</code> and ID value of the two elements (<code>&lt;label&gt;</code> and <code>&lt;input&gt;</code>). Unlike the first two inputs, the text box is partially filled in for the user because a URL always starts with 'http://' and the <code>label</code> does not have 'required' in brackets as it is the only the input that the user does not have to fill in due to the fact that not everyone owns a website.</p>
+                        <figure>
+                            <div class="fltrt">
+                                <img src="images/contact_form.JPG" alt="contact.html with the first form" />
+                            </div>
+                            <figcaption>
+                                <p>The selectors of <code>label</code> and <code>input</code> both have the property <code>display</code> as <code>block</code> so that each element is on a seperate line.</p>
+                                <small>Screenshot &copy; Author of this Website</small>
+                            </figcaption>
+                        </figure>
+                        <p class="clear">To allow spacing for the main content between the 'menu' and <code>footer</code>, the top margin for the footer and bottom margin for the menu are set to 1.5em.</p>
+                        <figure>
+                            <div class="fltlt">
+                                <img src="images/contact_form_2.JPG" alt="contact.html with a border surrounding the form, where it breaks at the top to fill the text, 'Your contact details'" />
+                            </div>
+                            <figcaption>
+                                <p>I surrounded the three labels and inputs with <code>&lt;fieldset&gt;</code> tags with a <code>&lt;legend&gt;</code> element that describes the section in this form.</p>
+                                <small>Screenshot &copy; Author of this Website</small>
+                            </figcaption>
+                        </figure>
+                        <p class="clear">A new <code>fieldset</code> is created with a <code>label</code> and <code>&lt;textarea&gt;</code>, which is a textbox that allows several lines of text to be written and I set the width to 80% of its parent element.</p>
+                        <figure>
+                            <div class="fltlt">
+                                <img src="images/new_website_colour_scheme.PNG" alt="new colours on the website: red, blue, black and white" />
+                                <br/>
+                                <img src="images/new_website_colour_scheme_2.PNG" alt="website with background image of a network and the buttons are more circular" />
+                                
+                            </div>
+                            <figcaption>
+                                <p>The old colour scheme does not work for colour blind people because they can't  distinguish between green and red. Therefore, the paper beige is changed to pure white and green is switched to black. I've also altered the links so that they are blue and change to red when being hovered over.</p>
+                                <p>Weekly Posts now have their links in the form of buttons in order to make them more appealing to be clicked on and it more mobile friendly because there is more space to click. <code>list-style</code> was set to none. Unfortunately, only the numbered points disappeared and the indent spacing was still present. This made the buttons on a small screen look as if they align on the right. To centre these elements, I added the <code>margin-right</code> property to the 'posts' class.</p>
+                                <p>The references' list items have a margin space between each other so that the user on a phone or tablet can find it easier to tap on the links.</p>
+                                <small>Screenshots &copy; Author of this Website</small>
+                                <br/>
+                                <small>Network Plexus Loop 4K - Free HD Stock Footage - No Copyright - Motion Graphics Background &copy; Free Stock Footage 4K, 24 May 2018</small>
+                            </figcaption>
+                        </figure>
+                        <p class="clear"><code>&lt;body&gt;</code> becomes a background image of a network with a black theme because that is the colour of the backup black background if the CSS cannot locate the image file. I've implemented parallax scrolling. The properties that are placed in the body selector: <a href="#ref30">[30]</a></p>
+                            <ul>
+                                <li><code>background-color</code> is the first property because it is the default background.</li>
+                                <li><code>background-attachment</code> is set to <code>fixed</code> in order to keep the image static on the page regardless of the scroll bar's position.</li>
+                                <li><code>background-position</code> aligns it to the centre.</li>
+                                <li><code>background-repeat</code> sepecifies that the image has <code>no-repeat</code>s.</li>
+                                <li><code>background-size</code> is written to <code>cover</code> the entire viewport window.</li>
+                            </ul>
+                        <p>'fltlt' and 'fltrt' have been moved to <code>@media</code> for tablet and desktop width screens because the text was barely readable next to the highly reduced image on a phone.</p>
+                        <p>The size of <code>&lt;h4&gt;</code> had to increase from 18px to 20px because it was almost matching the size of the <code>&lt;p&gt;</code> text. This is because headings are always larger than its contained content.</p>
+                        <figure>
+                            <div class="fltrt">
+                                <img src="images/contact_form_3.JPG" alt="contact page with 4 fieldsets in a form" />
+                            </div>
+                            <figcaption>
+                                <p>In contact.html, a third <code>fieldset</code> is written beneath with two radio buttons. The second option is checked on default because it is the one that is most likely to be chosen.</p>
+                                <p>I finally added an <code>&lt;input&gt;</code> where the type is given as 'submit'. This submit button has text that reads, 'Click to send'.</p>
+                                <p>I placed the <code>placeholder</code> attribute in textbox inputs. The 'ghost' uneditable peice of text inside a textbox that describes to the user what they should write.</p>
+                                <small>Screenshots &copy; Author of this Website</small>
+                            </figcaption>
+                        </figure>
+                        
+                        <div class="clear"></div>
+                    </div>
+                </article>
+            </li>
+        </ol>
+        
+        <div id="timetable">
+            <h2>My Timetable</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                </tr>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>Introduction to Cyber Security (Lecture)</td>
+                    <td>Computing Technogies (Lab)</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Introduction to Cyber Security (Lecture)</td>
+                    <td>Introduction to Cyber Security (Lab)</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td></td>
+                    <td>Introduction to Cyber Security (Lab)</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                    <td>13:00 - 14:00</td>
+                    <td></td>
+                    <td>Introduction to Web Development (Lecture)</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>Working in the Computing Industry (Lecture)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00 - 16:00</td>
+                    <td>Computing Technologies (Lecture)</td>
+                    <td>Introduction to Programming (Lab)</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td>Introduction to Programming (Lecture)</td>
+                <td>Introduction to Programming (Lab)</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+        
+        <aside id="references">
+        
+        	<h2>References</h2>
+        	    
+        	    <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
+            
+            	<ol>
+            	    <li id="ref1"><a href="https://validator.w3.org/" target="_blank">W3.org. (2013). <em>The W3C Markup Validation Service</em>. [online] Available at: https://validator.w3.org/.</a></li>
+                	<li><a href="https://www.w3schools.com" target="_blank">W3schools.com. (2019). <em>W3Schools Online Web Tutorials</em>. [online] Available at: https://www.w3schools.com.</a></li>
+                	<li><a href="https://www.rapidtables.com/web/html/link/html-link-new-window.html" target="_blank">Rapidtables.com. (2020). <em>HTML link in a new window</em>. [online] Available at: https://www.rapidtables.com/web/html/link/html-link-new-window.html [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref4"><a href="https://blog.hubspot.com/marketing/jump-link-same-page" target="_blank">Mineo, G. (2019). <em>How to Create a Link to Jump to a Specific Part of a Page [Quick Tip]</em>. [online] Hubspot.com. Available at: https://blog.hubspot.com/marketing/jump-link-same-page [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref5"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">MDN Web Docs. (2019). <em>HTML5</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5.</a></li>
+                	<li id="ref6"><a href="http://html5doctor.com/the-article-element/" target="_blank">Leadbetter, T. (2010). <em>The article element | HTML5 Doctor</em>. [online] Html5doctor.com. Available at: http://html5doctor.com/the-article-element/ [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref7"><a href="https://www.lifewire.com/block-level-vs-inline-elements-3468615" target="_blank">lifewire (2019). <em>Block-Level and Inline Elements and How to Use Them</em>. [online] Lifewire. Available at: https://www.lifewire.com/block-level-vs-inline-elements-3468615.</a></li>
+                	<li id="ref8"><a href="https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/" target="_blank">coffeecup (2017). <em>Absolute vs. Relative Paths/Links</em>. [online] CoffeeCup Software. Available at: https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/ [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref9"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN Web Docs. (2019). <em>Getting started with HTML</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref10"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN Web Docs. (2019). <em>HTML elements reference</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element.</a></li>
+                	<li id="ref11"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">MDN Web Docs. (2019). <em>&lt;cite&gt;: The Citation element</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref12"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">MDN Web Docs. (2019). <em>Document and website structure</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref13"><a href="https://www.youtube.com/watch?v=dEbl5jvLKGQ" target="_blank">Screen Reader Demo for Digital Accessibility. (2016). <em>YouTube</em>. Available at: https://www.youtube.com/watch?v=dEbl5jvLKGQ [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref14"><a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">W3schools.com. (2020). <em>CSS Units</em>. [online] Available at: https://www.w3schools.com/cssref/css_units.asp [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref15"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors" target="_blank">MDN Web Docs. (2019). <em>CSS selectors</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref16"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">MDN Web Docs. (2019). <em>CSS reference</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference.</a></li>
+                	<li id="ref17"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">MDN Web Docs. (2019). <em>Learn to style HTML using CSS</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref18"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">MDN Web Docs. (2019). <em>CSS basics</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics.</a></li>
+                	<li id="ref19"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN Web Docs. (2019). <em>Fundamental text and font styling</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref20"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors" target="_blank">MDN Web Docs. (2019). <em>Type, class, and ID selectors</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref21"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank">MDN Web Docs. (2019). <em>Cascade and inheritance</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance.</a></li>
+                	<li id="ref22"><a href="https://stackoverflow.com/questions/1165497/can-i-prevent-text-in-a-div-block-from-overflowing" target="_blank">Stack Overflow. (2009). <em>Can I prevent text in a div block from overflowing?</em> [online] Available at: https://stackoverflow.com/questions/1165497/can-i-prevent-text-in-a-div-block-from-overflowing [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref23"><a href="https://www.quackit.com/css/css_cellspacing.cfm" target="_blank">Quackit.com. (2020). <em>CSS Cellspacing</em>. [online] Available at: https://www.quackit.com/css/css_cellspacing.cfm [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref24"><a href="https://www.granneman.com/webdev/coding/css/centertables" target="_blank">Granneman.com. (2020). <em>Center a table with CSS | Scott Granneman</em>. [online] Available at: https://www.granneman.com/webdev/coding/css/centertables [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref25"><a href="https://codepen.io/imprakash/pen/GgNMXO" target="_blank">Prakash, (2019). <em>Pure css popup box</em>. [online] CodePen. Available at: https://codepen.io/imprakash/pen/GgNMXO.</a></li>
+                	<li id="ref26"><a href="https://www.colorcombos.com/color-schemes/20/ColorCombo20.html" target="_blank">Colorcombos.com. (2020). <em>ColorCombo20 with Hex Colors #217C7E #F3EFE0 #3399FF #9A3334</em>. [online] Available at: https://www.colorcombos.com/color-schemes/20/ColorCombo20.html [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref27"><a href="https://www.w3schools.com/tags/att_for.asp" target="_blank">W3schools.com. (2020). <em>HTML for Attribute</em>. [online] Available at: https://www.w3schools.com/tags/att_for.asp [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref28"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank">MDN Web Docs. (2019). <em>Introduction to the CSS basic box model</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model.</a></li>
+                	<li id="ref29"><a href="https://internetingishard.com/html-and-css/css-box-model/" target="_blank">Internetingishard.com. (2017). <em>CSS Box Model | HTML & CSS Is Hard</em>. [online] Available at: https://internetingishard.com/html-and-css/css-box-model/ [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref30"><a href="https://css-tricks.com/almanac/properties/b/background-repeat/" target="_blank">Coyier, C. (2015). <em>background-repeat | CSS-Tricks</em>. [online] Available at: https://css-tricks.com/almanac/properties/b/background-repeat/. [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref31"><a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">W3schools.com. (2020). <em>Responsive Web Design Viewport</em>. [online] Available at: https://www.w3schools.com/css/css_rwd_viewport.asp.</a></li>
+                	<li id="ref32"><a href="https://zurb.com/word/mobile-first" target="_blank">Zurb.com. (2019). <em>ZURB — Product Design, Interaction Design & Design Strategy</em>. [online] Available at: https://zurb.com/word/mobile-first.</a></li>
+                	<li id="ref33"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">MDN Web Docs. (2019). <em>Grids</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids [Accessed 9 Jan. 2020].</a></li>
+                	<li id="ref34"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries" target="_blank">MDN Web Docs. (2019). <em>Media queries</em>. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries [Accessed 9 Jan. 2020].</a></li>
+                </ol>
+            
+        </aside>
+ 
+  
+	<footer><!--Footer content -->
+	    <div><a href="#top">Go to top</a></div>
+		<small>&copy; Author, 2019</small>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
